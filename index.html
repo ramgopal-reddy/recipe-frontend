@@ -174,7 +174,7 @@
             document.getElementById('image').style.display = 'none';
 
             try {
-                const response = await fetch(`https://try-recipe.onrender.com/recipe/${encodeURIComponent(recipeName)}`);
+                const response = await fetch(`https://recipe-backend-4vd6.onrender.com/recipe/${encodeURIComponent(recipeName)}`);
                 if (!response.ok) throw new Error('Recipe not found');
                 const data = await response.json();
 
